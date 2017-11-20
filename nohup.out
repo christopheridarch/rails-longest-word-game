@@ -1,0 +1,1178 @@
+=> Booting Puma
+=> Rails 5.0.6 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.10.0 (ruby 2.3.5-p376), codename: Russell's Teapot
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/ask" for 127.0.0.1 at 2017-11-20 13:09:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/ask"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (8.2ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.3ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.1ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (126.4ms)
+Started GET "/" for 127.0.0.1 at 2017-11-20 13:09:15 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 13:09:20 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 801ms (Views: 799.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 13:14:36 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 13:15:13 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 59ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 13:39:22 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 63ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 13:39:31 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 59ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 13:39:34 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 13:39:44 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 13:40:07 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 13:40:11 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:08:02 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 43ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:08:07 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:08:16 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/answer?word=run&start_time=2017-11-20&grid=%5B%22I%22%2C" for 127.0.0.1 at 2017-11-20 14:08:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/answer"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered collection of /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (3.1ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (103.1ms)
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:08:58 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:09:03 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:09:12 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:09:15 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/score?word=CAB&start_time=2017-11-20&grid=%5B%22C%22%2C" for 127.0.0.1 at 2017-11-20 14:09:25 +0100
+  
+ActionController::RoutingError (uninitialized constant WordssController):
+  
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.6) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.6) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.6) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.6) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.6) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.6) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.6) lib/action_dispatch/routing/route_set.rb:727:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.6) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.6) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.6) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.1ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.2ms)
+Started GET "/score?word=CAB&start_time=2017-11-20&grid=%5B%22C%22%2C" for 127.0.0.1 at 2017-11-20 14:09:48 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"CAB", "start_time"=>"2017-11-20", "grid"=>"[\"C\","}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for "[\"C\",":String
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.2ms)
+Started GET "/score?word=CAB&start_time=2017-11-20&grid=%5B%22C%22%2C" for 127.0.0.1 at 2017-11-20 14:09:53 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"CAB", "start_time"=>"2017-11-20", "grid"=>"[\"C\","}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for "[\"C\",":String
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.3ms)
+Started PUT "/__web_console/repl_sessions/c0421d064382244ec4a29f42dd31ae3c" for 127.0.0.1 at 2017-11-20 14:12:22 +0100
+Started PUT "/__web_console/repl_sessions/c0421d064382244ec4a29f42dd31ae3c" for 127.0.0.1 at 2017-11-20 14:12:25 +0100
+["C",
+Started PUT "/__web_console/repl_sessions/c0421d064382244ec4a29f42dd31ae3c" for 127.0.0.1 at 2017-11-20 14:14:10 +0100
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:14:37 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/score?word=IT&start_time=2017-11-20+14%3A14%3A38+%2B0100&grid=%5B%22I%22%2C+%22T%22%2C+%22V%22%2C+%22Q%22%2C+%22C%22%2C+%22X%22%2C+%22J%22%2C+%22Z%22%2C+%22M%22%2C+%22O%22%5D" for 127.0.0.1 at 2017-11-20 14:14:51 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"IT", "start_time"=>"2017-11-20 14:14:38 +0100", "grid"=>"[\"I\", \"T\", \"V\", \"Q\", \"C\", \"X\", \"J\", \"Z\", \"M\", \"O\"]"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for #<String:0x00007ffd4c352568>
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.0ms)
+Started PUT "/__web_console/repl_sessions/dadbd450149e9edeae6b61c24bc3b77d" for 127.0.0.1 at 2017-11-20 14:14:56 +0100
+Started PUT "/__web_console/repl_sessions/dadbd450149e9edeae6b61c24bc3b77d" for 127.0.0.1 at 2017-11-20 14:14:57 +0100
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:18:47 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Kuroko/code/christopheridarch/rails-longest-word-game/app/views/words/game.html.erb:15: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/Kuroko/code/christopheridarch/rails-longest-word-game/app/views/words/game.html.erb:17: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/words/game.html.erb:15: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/words/game.html.erb:17: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.1ms)
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:19:00 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:21:19 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:21:37 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:22:47 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:23:53 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:24:33 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:24:48 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:26:07 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:26:10 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:26:12 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:26:15 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:27:31 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:27:33 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:27:41 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/score?word=yo&start_time=2017-11-20+14%3A27%3A41+%2B0100&grid=QITMAHIOYY" for 127.0.0.1 at 2017-11-20 14:27:49 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"yo", "start_time"=>"2017-11-20 14:27:41 +0100", "grid"=>"QITMAHIOYY"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for "QITMAHIOYY":String
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.9ms)
+Started PUT "/__web_console/repl_sessions/72f6ca6fda6c343a4427695e2e7ce555" for 127.0.0.1 at 2017-11-20 14:27:52 +0100
+Started PUT "/__web_console/repl_sessions/72f6ca6fda6c343a4427695e2e7ce555" for 127.0.0.1 at 2017-11-20 14:27:52 +0100
+Started GET "/score?word=yo&start_time=2017-11-20+14%3A27%3A41+%2B0100&grid=QITMAHIOYY" for 127.0.0.1 at 2017-11-20 14:28:36 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"yo", "start_time"=>"2017-11-20 14:27:41 +0100", "grid"=>"QITMAHIOYY"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `char' for "QITMAHIOYY":String
+Did you mean?  chars
+               chr):
+  
+app/controllers/words_controller.rb:7:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.8ms)
+Started GET "/score?word=yo&start_time=2017-11-20+14%3A27%3A41+%2B0100&grid=QITMAHIOYY" for 127.0.0.1 at 2017-11-20 14:29:28 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"yo", "start_time"=>"2017-11-20 14:27:41 +0100", "grid"=>"QITMAHIOYY"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (can't convert String into an exact number):
+  
+app/controllers/words_controller.rb:38:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.9ms)
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:30:49 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/score?word=kayak&start_time=2017-11-20+14%3A30%3A49+%2B0100&grid=ZKDYKACAIQ" for 127.0.0.1 at 2017-11-20 14:31:02 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"kayak", "start_time"=>"2017-11-20 14:30:49 +0100", "grid"=>"ZKDYKACAIQ"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (can't convert String into an exact number):
+  
+app/controllers/words_controller.rb:38:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.8ms)
+Started PUT "/__web_console/repl_sessions/a23bb46db8fe2adbe2ddfc57dab9ab68" for 127.0.0.1 at 2017-11-20 14:31:52 +0100
+Started PUT "/__web_console/repl_sessions/a23bb46db8fe2adbe2ddfc57dab9ab68" for 127.0.0.1 at 2017-11-20 14:31:55 +0100
+Started PUT "/__web_console/repl_sessions/a23bb46db8fe2adbe2ddfc57dab9ab68" for 127.0.0.1 at 2017-11-20 14:31:57 +0100
+Started PUT "/__web_console/repl_sessions/a23bb46db8fe2adbe2ddfc57dab9ab68" for 127.0.0.1 at 2017-11-20 14:31:58 +0100
+Started PUT "/__web_console/repl_sessions/a23bb46db8fe2adbe2ddfc57dab9ab68" for 127.0.0.1 at 2017-11-20 14:32:01 +0100
+Started PUT "/__web_console/repl_sessions/a23bb46db8fe2adbe2ddfc57dab9ab68" for 127.0.0.1 at 2017-11-20 14:32:02 +0100
+Started PUT "/__web_console/repl_sessions/a23bb46db8fe2adbe2ddfc57dab9ab68" for 127.0.0.1 at 2017-11-20 14:32:26 +0100
+Started PUT "/__web_console/repl_sessions/a23bb46db8fe2adbe2ddfc57dab9ab68" for 127.0.0.1 at 2017-11-20 14:32:29 +0100
+Started PUT "/__web_console/repl_sessions/a23bb46db8fe2adbe2ddfc57dab9ab68" for 127.0.0.1 at 2017-11-20 14:32:33 +0100
+Started PUT "/__web_console/repl_sessions/a23bb46db8fe2adbe2ddfc57dab9ab68" for 127.0.0.1 at 2017-11-20 14:32:33 +0100
+Started GET "/score?word=kayak&start_time=2017-11-20+14%3A30%3A49+%2B0100&grid=ZKDYKACAIQ" for 127.0.0.1 at 2017-11-20 14:33:04 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"kayak", "start_time"=>"2017-11-20 14:30:49 +0100", "grid"=>"ZKDYKACAIQ"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (can't convert String into an exact number):
+  
+app/controllers/words_controller.rb:38:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.8ms)
+Started PUT "/__web_console/repl_sessions/e75531158e4dc75997ee6b238df8110d" for 127.0.0.1 at 2017-11-20 14:33:07 +0100
+Started PUT "/__web_console/repl_sessions/e75531158e4dc75997ee6b238df8110d" for 127.0.0.1 at 2017-11-20 14:33:07 +0100
+Started PUT "/__web_console/repl_sessions/e75531158e4dc75997ee6b238df8110d" for 127.0.0.1 at 2017-11-20 14:33:11 +0100
+Started PUT "/__web_console/repl_sessions/e75531158e4dc75997ee6b238df8110d" for 127.0.0.1 at 2017-11-20 14:33:12 +0100
+Started GET "/score?word=kayak&start_time=2017-11-20+14%3A30%3A49+%2B0100&grid=ZKDYKACAIQ" for 127.0.0.1 at 2017-11-20 14:33:36 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"kayak", "start_time"=>"2017-11-20 14:30:49 +0100", "grid"=>"ZKDYKACAIQ"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (can't convert String into an exact number):
+  
+app/controllers/words_controller.rb:38:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.6ms)
+Started PUT "/__web_console/repl_sessions/4a4592d7cdeece74255bf9ebc2f2a864" for 127.0.0.1 at 2017-11-20 14:33:41 +0100
+Started PUT "/__web_console/repl_sessions/4a4592d7cdeece74255bf9ebc2f2a864" for 127.0.0.1 at 2017-11-20 14:33:42 +0100
+Started PUT "/__web_console/repl_sessions/4a4592d7cdeece74255bf9ebc2f2a864" for 127.0.0.1 at 2017-11-20 14:33:48 +0100
+Started PUT "/__web_console/repl_sessions/4a4592d7cdeece74255bf9ebc2f2a864" for 127.0.0.1 at 2017-11-20 14:33:48 +0100
+Started PUT "/__web_console/repl_sessions/4a4592d7cdeece74255bf9ebc2f2a864" for 127.0.0.1 at 2017-11-20 14:33:52 +0100
+Started PUT "/__web_console/repl_sessions/4a4592d7cdeece74255bf9ebc2f2a864" for 127.0.0.1 at 2017-11-20 14:34:14 +0100
+Started PUT "/__web_console/repl_sessions/4a4592d7cdeece74255bf9ebc2f2a864" for 127.0.0.1 at 2017-11-20 14:34:19 +0100
+Started PUT "/__web_console/repl_sessions/4a4592d7cdeece74255bf9ebc2f2a864" for 127.0.0.1 at 2017-11-20 14:34:20 +0100
+Started GET "/score?word=kayak&start_time=2017-11-20+14%3A30%3A49+%2B0100&grid=ZKDYKACAIQ" for 127.0.0.1 at 2017-11-20 14:34:47 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"kayak", "start_time"=>"2017-11-20 14:30:49 +0100", "grid"=>"ZKDYKACAIQ"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for "ZKDYKACAIQ":String
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.7ms)
+Started PUT "/__web_console/repl_sessions/d8f27c09c06efd1727f2834572d897c5" for 127.0.0.1 at 2017-11-20 14:34:55 +0100
+Started PUT "/__web_console/repl_sessions/d8f27c09c06efd1727f2834572d897c5" for 127.0.0.1 at 2017-11-20 14:34:56 +0100
+Started PUT "/__web_console/repl_sessions/d8f27c09c06efd1727f2834572d897c5" for 127.0.0.1 at 2017-11-20 14:34:57 +0100
+Started PUT "/__web_console/repl_sessions/d8f27c09c06efd1727f2834572d897c5" for 127.0.0.1 at 2017-11-20 14:34:59 +0100
+Started GET "/score?word=kayak&start_time=2017-11-20+14%3A30%3A49+%2B0100&grid=ZKDYKACAIQ" for 127.0.0.1 at 2017-11-20 14:35:25 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"kayak", "start_time"=>"2017-11-20 14:30:49 +0100", "grid"=>"ZKDYKACAIQ"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for "ZKDYKACAIQ":String
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.6ms)
+Started PUT "/__web_console/repl_sessions/e95e993f11b082ec0dea3880bd962a9c" for 127.0.0.1 at 2017-11-20 14:35:31 +0100
+Started PUT "/__web_console/repl_sessions/e95e993f11b082ec0dea3880bd962a9c" for 127.0.0.1 at 2017-11-20 14:35:31 +0100
+Started GET "/score?word=kayak&start_time=2017-11-20+14%3A30%3A49+%2B0100&grid=ZKDYKACAIQ" for 127.0.0.1 at 2017-11-20 14:35:45 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"kayak", "start_time"=>"2017-11-20 14:30:49 +0100", "grid"=>"ZKDYKACAIQ"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for "ZKDYKACAIQ":String
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.4ms)
+Started PUT "/__web_console/repl_sessions/0ade85c68f64af22f84f277683a14bf2" for 127.0.0.1 at 2017-11-20 14:35:50 +0100
+Started PUT "/__web_console/repl_sessions/0ade85c68f64af22f84f277683a14bf2" for 127.0.0.1 at 2017-11-20 14:35:51 +0100
+Started PUT "/__web_console/repl_sessions/0ade85c68f64af22f84f277683a14bf2" for 127.0.0.1 at 2017-11-20 14:36:09 +0100
+Started GET "/score?word=kayak&start_time=2017-11-20+14%3A30%3A49+%2B0100&grid=ZKDYKACAIQ" for 127.0.0.1 at 2017-11-20 14:37:00 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"kayak", "start_time"=>"2017-11-20 14:30:49 +0100", "grid"=>"ZKDYKACAIQ"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for "ZKDYKACAIQ":String
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.2ms)
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:37:04 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (206.5ms)
+Completed 500 Internal Server Error in 212ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `word' for #<#<Class:0x00007ffd4fadd140>:0x00007ffd4bab7f48>
+Did you mean?  @word):
+    1: <h1>Your time to play ! Make your world !</h1>
+    2: 
+    3: 
+    4: <%= word %>
+    5: 
+    6: <p><form action="/score" method="get">
+    7:   <label for="question">Put your word</label>
+  
+app/views/words/game.html.erb:4:in `_app_views_words_game_html_erb___2886385267298349039_70362970123540'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.1ms)
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:37:44 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/score?word=BUNE&start_time=2017-11-20+14%3A37%3A44+%2B0100&grid=%5B%22Q%22%2C+%22B%22%2C+%22U%22%2C+%22E%22%2C+%22J%22%2C+%22D%22%2C+%22N%22%2C+%22U%22%2C+%22X%22%2C+%22K%22%5D" for 127.0.0.1 at 2017-11-20 14:37:57 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"BUNE", "start_time"=>"2017-11-20 14:37:44 +0100", "grid"=>"[\"Q\", \"B\", \"U\", \"E\", \"J\", \"D\", \"N\", \"U\", \"X\", \"K\"]"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for #<String:0x00007ffd4f8e5338>
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.8ms)
+Started PUT "/__web_console/repl_sessions/f7dc0c4b0f39f40b52debbd6fc19a33d" for 127.0.0.1 at 2017-11-20 14:38:01 +0100
+Started PUT "/__web_console/repl_sessions/f7dc0c4b0f39f40b52debbd6fc19a33d" for 127.0.0.1 at 2017-11-20 14:38:01 +0100
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:38:23 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/score?word=FB&start_time=2017-11-20+14%3A38%3A23+%2B0100&grid=%5B%22N%22%2C+%22T%22%2C+%22F%22%2C+%22B%22%2C+%22Q%22%2C+%22Y%22%2C+%22X%22%2C+%22H%22%2C+%22Z%22%2C+%22I%22%5D" for 127.0.0.1 at 2017-11-20 14:38:31 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"FB", "start_time"=>"2017-11-20 14:38:23 +0100", "grid"=>"[\"N\", \"T\", \"F\", \"B\", \"Q\", \"Y\", \"X\", \"H\", \"Z\", \"I\"]"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for #<String:0x00007ffd4bb76290>
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.9ms)
+Started PUT "/__web_console/repl_sessions/f50cfcbfd74e96017f621ead8e4c39df" for 127.0.0.1 at 2017-11-20 14:38:35 +0100
+Started PUT "/__web_console/repl_sessions/f50cfcbfd74e96017f621ead8e4c39df" for 127.0.0.1 at 2017-11-20 14:38:35 +0100
+Started GET "/score?word=FB&start_time=2017-11-20+14%3A38%3A23+%2B0100&grid=%5B%22N%22%2C+%22T%22%2C+%22F%22%2C+%22B%22%2C+%22Q%22%2C+%22Y%22%2C+%22X%22%2C+%22H%22%2C+%22Z%22%2C+%22I%22%5D" for 127.0.0.1 at 2017-11-20 14:38:45 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"FB", "start_time"=>"2017-11-20 14:38:23 +0100", "grid"=>"[\"N\", \"T\", \"F\", \"B\", \"Q\", \"Y\", \"X\", \"H\", \"Z\", \"I\"]"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for #<String:0x00007ffd4c0f92a8>
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.4ms)
+Started PUT "/__web_console/repl_sessions/9168119fbd793a42933e546bf83d29c9" for 127.0.0.1 at 2017-11-20 14:38:48 +0100
+Started PUT "/__web_console/repl_sessions/9168119fbd793a42933e546bf83d29c9" for 127.0.0.1 at 2017-11-20 14:38:48 +0100
+Started GET "/score?word=FB&start_time=2017-11-20+14%3A38%3A23+%2B0100&grid=%5B%22N%22%2C+%22T%22%2C+%22F%22%2C+%22B%22%2C+%22Q%22%2C+%22Y%22%2C+%22X%22%2C+%22H%22%2C+%22Z%22%2C+%22I%22%5D" for 127.0.0.1 at 2017-11-20 14:39:43 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"FB", "start_time"=>"2017-11-20 14:38:23 +0100", "grid"=>"[\"N\", \"T\", \"F\", \"B\", \"Q\", \"Y\", \"X\", \"H\", \"Z\", \"I\"]"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for #<String:0x00007ffd4bb818c0>
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.6ms)
+Started PUT "/__web_console/repl_sessions/43904b8fa6e713582fc767d92700ff77" for 127.0.0.1 at 2017-11-20 14:39:46 +0100
+Started PUT "/__web_console/repl_sessions/43904b8fa6e713582fc767d92700ff77" for 127.0.0.1 at 2017-11-20 14:39:47 +0100
+Started PUT "/__web_console/repl_sessions/43904b8fa6e713582fc767d92700ff77" for 127.0.0.1 at 2017-11-20 14:40:01 +0100
+Started PUT "/__web_console/repl_sessions/43904b8fa6e713582fc767d92700ff77" for 127.0.0.1 at 2017-11-20 14:40:04 +0100
+Started GET "/score?word=FB&start_time=2017-11-20+14%3A38%3A23+%2B0100&grid=%5B%22N%22%2C+%22T%22%2C+%22F%22%2C+%22B%22%2C+%22Q%22%2C+%22Y%22%2C+%22X%22%2C+%22H%22%2C+%22Z%22%2C+%22I%22%5D" for 127.0.0.1 at 2017-11-20 14:40:31 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"FB", "start_time"=>"2017-11-20 14:38:23 +0100", "grid"=>"[\"N\", \"T\", \"F\", \"B\", \"Q\", \"Y\", \"X\", \"H\", \"Z\", \"I\"]"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for #<String:0x00007ffd4ada7880>
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.2ms)
+Started PUT "/__web_console/repl_sessions/ac9ded56394fb10af205065132435085" for 127.0.0.1 at 2017-11-20 14:40:35 +0100
+Started PUT "/__web_console/repl_sessions/ac9ded56394fb10af205065132435085" for 127.0.0.1 at 2017-11-20 14:40:36 +0100
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:40:44 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/score?word=ZAK&start_time=2017-11-20+14%3A40%3A44+%2B0100&grid=%5B%22K%22%2C+%22D%22%2C+%22K%22%2C+%22R%22%2C+%22I%22%2C+%22K%22%2C+%22A%22%2C+%22Z%22%2C+%22Z%22%2C+%22C%22%5D" for 127.0.0.1 at 2017-11-20 14:40:51 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"ZAK", "start_time"=>"2017-11-20 14:40:44 +0100", "grid"=>"[\"K\", \"D\", \"K\", \"R\", \"I\", \"K\", \"A\", \"Z\", \"Z\", \"C\"]"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for #<String:0x00007ffd51108708>
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.1ms)
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:40:53 +0100
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:40:53 +0100
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:41:13 +0100
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:41:14 +0100
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:41:21 +0100
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:41:21 +0100
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:41:24 +0100
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:41:27 +0100
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:43:03 +0100
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:43:06 +0100
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:43:06 +0100
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:43:16 +0100
+Started PUT "/__web_console/repl_sessions/a3888532f3f9c4860d24e033b085c461" for 127.0.0.1 at 2017-11-20 14:43:17 +0100
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:44:31 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 63ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/score?word=VU&start_time=2017-11-20+14%3A44%3A31+%2B0100&grid=%5B%22G%22%2C+%22J%22%2C+%22I%22%2C+%22G%22%2C+%22F%22%2C+%22N%22%2C+%22V%22%2C+%22U%22%2C+%22M%22%2C+%22W%22%5D" for 127.0.0.1 at 2017-11-20 14:44:37 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"VU", "start_time"=>"2017-11-20 14:44:31 +0100", "grid"=>"[\"G\", \"J\", \"I\", \"G\", \"F\", \"N\", \"V\", \"U\", \"M\", \"W\"]"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for #<String:0x00007ffd4c3bc350>
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.2ms)
+Started GET "/score?word=JIVU&start_time=2017-11-20+14%3A44%3A31+%2B0100&grid=%5B%22G%22%2C+%22J%22%2C+%22I%22%2C+%22G%22%2C+%22F%22%2C+%22N%22%2C+%22V%22%2C+%22U%22%2C+%22M%22%2C+%22W%22%5D" for 127.0.0.1 at 2017-11-20 14:46:45 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"JIVU", "start_time"=>"2017-11-20 14:44:31 +0100", "grid"=>"[\"G\", \"J\", \"I\", \"G\", \"F\", \"N\", \"V\", \"U\", \"M\", \"W\"]"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for #<String:0x00007ffd4eb24d70>
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.1ms)
+Started PUT "/__web_console/repl_sessions/299f7c52ff6717c000f63c6c01231f21" for 127.0.0.1 at 2017-11-20 14:46:47 +0100
+Started PUT "/__web_console/repl_sessions/299f7c52ff6717c000f63c6c01231f21" for 127.0.0.1 at 2017-11-20 14:46:48 +0100
+Started PUT "/__web_console/repl_sessions/299f7c52ff6717c000f63c6c01231f21" for 127.0.0.1 at 2017-11-20 14:47:16 +0100
+Started PUT "/__web_console/repl_sessions/299f7c52ff6717c000f63c6c01231f21" for 127.0.0.1 at 2017-11-20 14:47:17 +0100
+Started PUT "/__web_console/repl_sessions/299f7c52ff6717c000f63c6c01231f21" for 127.0.0.1 at 2017-11-20 14:47:27 +0100
+Started PUT "/__web_console/repl_sessions/299f7c52ff6717c000f63c6c01231f21" for 127.0.0.1 at 2017-11-20 14:47:31 +0100
+Started PUT "/__web_console/repl_sessions/299f7c52ff6717c000f63c6c01231f21" for 127.0.0.1 at 2017-11-20 14:47:31 +0100
+Started GET "/score?word=JIVU&start_time=2017-11-20+14%3A44%3A31+%2B0100&grid=%5B%22G%22%2C+%22J%22%2C+%22I%22%2C+%22G%22%2C+%22F%22%2C+%22N%22%2C+%22V%22%2C+%22U%22%2C+%22M%22%2C+%22W%22%5D" for 127.0.0.1 at 2017-11-20 14:47:48 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"JIVU", "start_time"=>"2017-11-20 14:44:31 +0100", "grid"=>"[\"G\", \"J\", \"I\", \"G\", \"F\", \"N\", \"V\", \"U\", \"M\", \"W\"]"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for #<String:0x00007ffd5106ba48>
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.0ms)
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:47:54 +0100
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:47:57 +0100
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:47:59 +0100
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:48:01 +0100
+"[\"G\", \"J\", \"I\", \"G\", \"F\", \"N\", \"V\", \"U\", \"M\", \"W\"]"
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:48:13 +0100
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:48:17 +0100
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:48:26 +0100
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:48:47 +0100
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:49:04 +0100
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:49:07 +0100
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:49:09 +0100
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:49:16 +0100
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:49:34 +0100
+Started PUT "/__web_console/repl_sessions/e9da5d5f9f14c45621197fd26eb4bd49" for 127.0.0.1 at 2017-11-20 14:49:36 +0100
+Started GET "/score?word=JIVU&start_time=2017-11-20+14%3A44%3A31+%2B0100&grid=%5B%22G%22%2C+%22J%22%2C+%22I%22%2C+%22G%22%2C+%22F%22%2C+%22N%22%2C+%22V%22%2C+%22U%22%2C+%22M%22%2C+%22W%22%5D" for 127.0.0.1 at 2017-11-20 14:51:31 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"JIVU", "start_time"=>"2017-11-20 14:44:31 +0100", "grid"=>"[\"G\", \"J\", \"I\", \"G\", \"F\", \"N\", \"V\", \"U\", \"M\", \"W\"]"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for #<String:0x00007ffd4c33aa58>
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.7ms)
+Started PUT "/__web_console/repl_sessions/52d55e0b8f02d895cb1475527485a991" for 127.0.0.1 at 2017-11-20 14:53:39 +0100
+Started PUT "/__web_console/repl_sessions/52d55e0b8f02d895cb1475527485a991" for 127.0.0.1 at 2017-11-20 14:53:40 +0100
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:53:48 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:54:13 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/score?word=OK&start_time=2017-11-20+14%3A54%3A13+%2B0100&grid=EGWKOEXHCT" for 127.0.0.1 at 2017-11-20 14:54:31 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"OK", "start_time"=>"2017-11-20 14:54:13 +0100", "grid"=>"EGWKOEXHCT"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for "EGWKOEXHCT":String
+Did you mean?  tap):
+  
+app/controllers/words_controller.rb:24:in `not_in_the_grid?'
+app/controllers/words_controller.rb:37:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.6ms)
+Started PUT "/__web_console/repl_sessions/5d62419bcacaea34a50789b3569bc11f" for 127.0.0.1 at 2017-11-20 14:54:41 +0100
+Started PUT "/__web_console/repl_sessions/5d62419bcacaea34a50789b3569bc11f" for 127.0.0.1 at 2017-11-20 14:54:41 +0100
+Started PUT "/__web_console/repl_sessions/5d62419bcacaea34a50789b3569bc11f" for 127.0.0.1 at 2017-11-20 14:55:08 +0100
+Started PUT "/__web_console/repl_sessions/5d62419bcacaea34a50789b3569bc11f" for 127.0.0.1 at 2017-11-20 14:55:10 +0100
+Started GET "/score?word=OK&start_time=2017-11-20+14%3A54%3A13+%2B0100&grid=EGWKOEXHCT" for 127.0.0.1 at 2017-11-20 14:55:25 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"OK", "start_time"=>"2017-11-20 14:54:13 +0100", "grid"=>"EGWKOEXHCT"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - https://wagon-dictionary.herokuapp.com/OK):
+  
+app/controllers/words_controller.rb:42:in `initialize'
+app/controllers/words_controller.rb:42:in `open'
+app/controllers/words_controller.rb:42:in `run_game'
+app/controllers/words_controller.rb:11:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.2ms)
+Started GET "/score?word=OK&start_time=2017-11-20+14%3A54%3A13+%2B0100&grid=EGWKOEXHCT" for 127.0.0.1 at 2017-11-20 14:56:12 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"OK", "start_time"=>"2017-11-20 14:54:13 +0100", "grid"=>"EGWKOEXHCT"}
+Completed 500 Internal Server Error in 336ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (can't convert String into an exact number):
+  
+app/controllers/words_controller.rb:52:in `run_game'
+app/controllers/words_controller.rb:14:in `score'
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Kuroko/.rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.6ms)
+Started GET "/score?word=OK&start_time=2017-11-20+14%3A54%3A13+%2B0100&grid=EGWKOEXHCT" for 127.0.0.1 at 2017-11-20 14:57:38 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"OK", "start_time"=>"2017-11-20 14:54:13 +0100", "grid"=>"EGWKOEXHCT"}
+  Rendering words/score.html.erb within layouts/application
+  Rendered words/score.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1287ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:58:20 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:58:56 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 14:59:17 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 15:00:07 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 15:00:23 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 15:00:28 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 15:00:36 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/score?word=APES&start_time=2017-11-20+15%3A00%3A36+%2B0100&grid=JXSCIAPZSVPFABE" for 127.0.0.1 at 2017-11-20 15:01:00 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"APES", "start_time"=>"2017-11-20 15:00:36 +0100", "grid"=>"JXSCIAPZSVPFABE"}
+  Rendering words/score.html.erb within layouts/application
+  Rendered words/score.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 326ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2017-11-20 15:02:02 +0100
+Processing by WordsController#game as HTML
+  Rendering words/game.html.erb within layouts/application
+  Rendered words/game.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/score?word=dog&start_time=2017-11-20+15%3A02%3A02+%2B0100&grid=LYMAOWLAHHDOGTG" for 127.0.0.1 at 2017-11-20 15:02:11 +0100
+Processing by WordsController#score as HTML
+  Parameters: {"word"=>"dog", "start_time"=>"2017-11-20 15:02:02 +0100", "grid"=>"LYMAOWLAHHDOGTG"}
+  Rendering words/score.html.erb within layouts/application
+  Rendered words/score.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 278ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+

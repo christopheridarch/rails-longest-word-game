@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+.list-inline li {
+  display: inline-block;
+  list-style: none; /* pour enlever les puces sur IE7 */
+  margin: 10px;
+}

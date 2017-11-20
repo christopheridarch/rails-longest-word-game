@@ -1,0 +1,9 @@
+// Place all the styles related to the words controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.list-inline li {
+  display: inline-block;
+  list-style: none; /* pour enlever les puces sur IE7 */
+  margin: 10px;
+}
